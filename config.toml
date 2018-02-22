@@ -11,6 +11,8 @@ defaultContentLanguageInSubdir= false
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+disqusShortname = "thibaultvatter"
+
 [params]
   editURL = "https://tvatter.github.io/dsfba_2018/"
   description = "Website of the course data science for business analytics"
