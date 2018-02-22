@@ -11,7 +11,7 @@ defaultContentLanguageInSubdir= false
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-disqusShortname = "thibaultvatter"
+disqusShortname = "tvatter-github-io"
 
 [params]
   editURL = "https://tvatter.github.io/dsfba_2018/"
