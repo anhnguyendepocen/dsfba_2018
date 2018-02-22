@@ -1,5 +1,5 @@
 ---
-title: Ressources
+title: Resources
 weight: 8
 pre: "<b>4. </b>"
 ---
@@ -36,7 +36,13 @@ data structures.
 
 ## Online learning
 
-#### [Datacamp's free R Tutorial](https://www.datacamp.com/courses/free-introduction-to-r) and [Try R by Code School](http://tryr.codeschool.com/)
+#### [Coding club's tutorials](https://ourcodingclub.github.io/)
+
+> Our mission is to create a fun and supportive environment where we develop programming and statistics skills together, using R. 
+> 
+> We want to replace statistics anxiety and code fear with inspiration and motivation to learn, and here we will share our experience.
+
+#### [Datacamp's free R tutorial](https://www.datacamp.com/courses/free-introduction-to-r) and [Try R by Code School](http://tryr.codeschool.com/)
 
 Both sites provide interactive lessons that will get you writing real code in minutes. They are a great place to make mistakes and test out new skills. You are told immediately when you go wrong and given a chance to fix your code.
 

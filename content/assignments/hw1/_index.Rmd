@@ -76,7 +76,7 @@ In this exercise, you will use the airquality dataset from the datasets package.
 
 __2.a__  Load the dataset mtcars. How many observations and variables does this dataset have?
 
-__2.b__  Print out the mtcars data frame sorted by hp (descending oder).
+__2.b__  Print out the mtcars data frame sorted by hp (descending order).
 
 __2.c__ Create a new object named `cars_cyl` and assign to it the `mtcars` data frame grouped by the number of cylinders, removing all variables except the average miles per US gallon and gross horsepower for each cylinder group.
 
