@@ -11,6 +11,7 @@ defaultContentLanguageInSubdir= false
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+googleAnalytics = "UA-114246735-1"
 disqusShortname = "tvatter-github-io"
 
 [params]
