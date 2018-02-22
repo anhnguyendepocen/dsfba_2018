@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.36.1" />
+    <meta name="description" content="Website of the course data science for business analytics">
+<meta name="author" content="Thibault Vatter">
+
+    <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+
+    <title>H0: R Refresher :: Data Science for Business Analytics</title>
+    
+    
+    <link href="/dsfba_2018/css/nucleus.css?1518781405" rel="stylesheet">
+    <link href="/dsfba_2018/css/font-awesome.min.css?1518781405" rel="stylesheet">
+    <link href="/dsfba_2018/css/hybrid.css?1518781405" rel="stylesheet">
+    <link href="/dsfba_2018/css/featherlight.min.css?1518781405" rel="stylesheet">
+    <link href="/dsfba_2018/css/perfect-scrollbar.min.css?1518781405" rel="stylesheet">
+    <link href="/dsfba_2018/css/auto-complete.css?1518781405" rel="stylesheet">
+    <link href="/dsfba_2018/css/theme.css?1518781405" rel="stylesheet">
+    <link href="/dsfba_2018/css/hugo-theme.css?1518781405" rel="stylesheet">
+    
+      <link href="/dsfba_2018/css/theme-blue.css?1518781405" rel="stylesheet">
+    
+
+    <script src="/dsfba_2018/js/jquery-2.x.min.js?1518781405"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/dsfba_2018/post/h0-r-refresher/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+<img src="https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/hec_logo_white.png" alt="hec_logo_white">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/dsfba_2018/js/lunr.min.js?1518781405"></script>
+<script type="text/javascript" src="/dsfba_2018/js/auto-complete.js?1518781405"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/dsfba_2018\/';
+    
+</script>
+<script type="text/javascript" src="/dsfba_2018/js/search.js?1518781405"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/syllabus/" title="Syllabus" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/syllabus/">
+          <b>1. </b>Syllabus
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/lectures/" title="Lectures" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/lectures/">
+          <b>2. </b>Lectures
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/assignments/" title="Assignments" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/assignments/">
+          <b>3. </b>Assignments
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/dsfba_2018/assignments/h0-r-refresher/" title="H0: R Refresher" class="dd-item ">
+        <a href="/dsfba_2018/assignments/h0-r-refresher/">
+        H0: R Refresher
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/dsfba_2018/assignments/h0-r-refresher/" title="H0: R Refresher" class="dd-item ">
+        <a href="/dsfba_2018/assignments/h0-r-refresher/">
+        <b>3. </b>H0: R Refresher
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/dsfba_2018/assignments/h0_ref/" title="" class="dd-item ">
+        <a href="/dsfba_2018/assignments/h0_ref/">
+        
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/ressources/" title="Ressources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/ressources/">
+          <b>4. </b>Ressources
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/post/" title="Posts" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/dsfba_2018/post/">
+          Posts
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/dsfba_2018/post/h0-r-refresher/" title="H0: R Refresher" class="dd-item active">
+        <a href="/dsfba_2018/post/h0-r-refresher/">
+        H0: R Refresher
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+       
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fa fa-fw fa-history"></i> Clear History</a></li>         
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://tvatter.github.io/dsfba_2018/post/2018-02-16-h0-r-refresher.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/dsfba_2018/'>Data Science for Business Analytics</a> > <a href='/dsfba_2018/post/'>Posts</a> > H0: R Refresher
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#r-rstudio-installation">R, RStudio, Installation</a>
+<ul>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#assignment">Assignment</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#data-structures">Data Structures</a></li>
+<li><a href="#vectors">Vectors</a></li>
+<li><a href="#data-frames">Data frames</a></li>
+<li><a href="#organizing-your-code">Organizing your code</a></li>
+<li><a href="#reading-data">Reading Data</a></li>
+<li><a href="#starter-exercise">Starter exercise</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>H0: R Refresher</h1>
+          
+
+        
+
+
+
+
+<hr />
+
+<p>title: &lsquo;H0: R Refresher&rsquo;
+author: Natasha
+date: &lsquo;2018-02-16&rsquo;
+slug: h0-r-refresher
+pre: &ldquo;<b>3. </b>&ldquo;</p>
+
+<hr />
+
+<h2 id="r-rstudio-installation">R, RStudio, Installation</h2>
+
+<ul>
+<li><strong>R</strong> is a programming language for statistical analysis</li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/"><strong>RStudio</strong></a> is the integrated development environment (IDE) for R in which we write and execute R code, plot things and write reports.</li>
+<li><a href="http://web.cs.ucla.edu/~gulzar/rstudio/">Installation guidelines and details (Mac, Windows, Linux)</a></li>
+</ul>
+
+<h3 id="libraries">Libraries</h3>
+
+<p>R uses different libraries or packages to load specific functions (read excel files, talk to Twitter, generate plots). You load a package or a library with the command:</p>
+
+<pre><code class="language-r"># install package from RStudio console
+# ** Note the quotation marks!
+# install.packages(&quot;name_of_package&quot;)
+
+# load package in enviromnet
+library(blogdown) 
+</code></pre>
+
+<h3 id="assignment">Assignment</h3>
+
+<p>In R, we assign values (numbers, characters, data frames) to objects (vectors, maricies, variables).
+To do so we use the &ldquo;&lt;-&rdquo; operator:</p>
+
+<pre><code class="language-r">
+# name_of_object = value
+an_object &lt;- 2
+
+# inspect object's value
+an_object
+print(an_object)
+
+another_object &lt;- &quot;some string&quot;
+</code></pre>
+
+<h3 id="functions">Functions</h3>
+
+<p>Standard format for defining a function in R:</p>
+
+<pre><code class="language-r">my_function_name &lt;- function(arg1 = &quot;default value&quot;, arg2 = &quot;default value&quot;){
+  # ... execution code goes here
+  merged_string &lt;- paste(arg1, arg2) # 'paste' is used for concatenating strings
+
+  return(merged_string) # if not specified, last evaluated object is returned
+  }
+
+# call a function elsewhere from code
+arg1 &lt;- &quot;Hello&quot;
+arg2 &lt;- &quot;World!&quot;
+an_object &lt;- my_function_name(arg1, arg2)
+print(an_object)
+
+</code></pre>
+
+<h3 id="data-structures">Data Structures</h3>
+
+<p>R’s base data structures can be organised by their dimensionality (1d, 2d, or nd) and whether they’re homogeneous (all contents must be of the same type) or heterogeneous (the contents can be of different types). This gives rise to the five data types most often used in data analysis:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">Homogeneous</th>
+<th align="center">Heterogeneous</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1d</td>
+<td align="center">Atomic vector</td>
+<td align="center">List</td>
+</tr>
+
+<tr>
+<td align="center">2d</td>
+<td align="center">Matrix</td>
+<td align="center">Data frame</td>
+</tr>
+
+<tr>
+<td align="center">nd</td>
+<td align="center">Array</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+
+<p>Understand what data structures it’s composed of is to use <strong>str()</strong>. str() is short for structure and it gives a compact, human readable description of any R data structure.</p>
+
+<h3 id="vectors">Vectors</h3>
+
+<p>The basic data structure in R is the vector. Vectors come in two flavours: atomic vectors and lists. They have three common properties:</p>
+
+<ul>
+<li>Type, typeof(), what it is.</li>
+<li>Length, length(), how many elements it contains.</li>
+<li>Attributes, attributes(), additional arbitrary metadata.
+They differ in the types of their elements: <strong>all elements</strong> of an atomic vector must be the <strong>same type</strong>, whereas the elements of a list can have different types.</li>
+</ul>
+
+<p>There are four common types of atomic vectors: logical, integer, double (often called numeric), and character.
+Atomic vectors are usually created with c(), short for combine:</p>
+
+<pre><code class="language-r">dbl_var &lt;- c(1, 2.5, 4.5)
+# With the L suffix, you get an integer rather than a double
+int_var &lt;- c(1L, 6L, 10L)
+# Use TRUE and FALSE (or T and F) to create logical vectors
+log_var &lt;- c(TRUE, FALSE, T, F)
+chr_var &lt;- c(&quot;these are&quot;, &quot;some strings&quot;)
+
+int_var &lt;- c(1L, 6L, 10L)
+typeof(int_var)
+
+
+is.integer(int_var)
+</code></pre>
+
+<h3 id="data-frames">Data frames</h3>
+
+<h3 id="organizing-your-code">Organizing your code</h3>
+
+<h3 id="reading-data">Reading Data</h3>
+
+<h3 id="starter-exercise">Starter exercise</h3>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/dsfba_2018/post/" title="Posts"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/dsfba_2018/syllabus/" title="Syllabus" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/dsfba_2018/js/clipboard.min.js?1518781405"></script>
+    <script src="/dsfba_2018/js/perfect-scrollbar.min.js?1518781405"></script>
+    <script src="/dsfba_2018/js/perfect-scrollbar.jquery.min.js?1518781405"></script>
+    <script src="/dsfba_2018/js/jquery.sticky.js?1518781405"></script>
+    <script src="/dsfba_2018/js/featherlight.min.js?1518781405"></script>
+    <script src="/dsfba_2018/js/html5shiv-printshiv.min.js?1518781405"></script>
+    <script src="/dsfba_2018/js/highlight.pack.js?1518781405"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/dsfba_2018/js/modernizr.custom.71422.js?1518781405"></script>
+    <script src="/dsfba_2018/js/learn.js?1518781405"></script>
+    <script src="/dsfba_2018/js/hugo-learn.js?1518781405"></script>
+
+    <link href="/dsfba_2018/mermaid/mermaid.css?1518781405" type="text/css" rel="stylesheet" />
+    <script src="/dsfba_2018/mermaid/mermaid.js?1518781405"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-114246735-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  </body>
+</html>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/dsfba_2018/syllabus/</loc>
+  </url>
+  
+  <url>
+    <loc>/dsfba_2018/lectures/</loc>
+  </url>
+  
+  <url>
+    <loc>/dsfba_2018/assignments/</loc>
+  </url>
+  
+  <url>
+    <loc>/dsfba_2018/ressources/</loc>
+  </url>
+  
+  <url>
+    <loc>/dsfba_2018/assignments/hw0/</loc>
+    <lastmod>2018-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/dsfba_2018/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/dsfba_2018/</loc>
+  </url>
+  
+  <url>
+    <loc>/dsfba_2018/assignments/hw1/</loc>
+  </url>
+  
+  <url>
+    <loc>/dsfba_2018/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

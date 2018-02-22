@@ -1,0 +1,145 @@
+---
+title: "HW1: Exploratory Data Analysis"
+author: "Natasha"
+date: "16 February 2018"
+output: html_document
+
+---
+
+
+
+<p><a href="https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/dsfba_homework1_skeleton.zip">Download the HW1 skeleton files</a>. To successfully complete the first assignment you
+will have to do the following:</p>
+<ol style="list-style-type: decimal">
+<li>Create a new project with the name <code>homework1.Rproj</code>.</li>
+<li>Organize the files in the right folders to provide ease of building a final
+<code>HW1_report.Rmd</code> = <code>hw1_ex1.Rmd</code> + <code>hw1_ex2.Rmd</code> + <code>hw1_ex3.Rmd</code>.</li>
+<li>Following the instructions below, complete missing code in chunks in <code>hw1_ex1.Rmd</code>, <code>hw1_ex2.Rmd</code> and <code>hw1_ex3.Rmd</code>.</li>
+</ol>
+<p>To obtain the maximum number of points, use whenever possible:</p>
+<ul>
+<li>the pipeline symbol <code>%&gt;%</code>,</li>
+<li><code>dplyr</code> verbs (see below),</li>
+<li><code>kable</code> to print tables,</li>
+<li><code>ggplot</code> to produce the figures.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">verb</th>
+<th align="left">description</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>select()</code></td>
+<td align="left">select columns</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><code>filter()</code></td>
+<td align="left">filter rows</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>arrange()</code></td>
+<td align="left">re-order or arrange rows</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><code>mutate()</code></td>
+<td align="left">create new columns</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>summarise()</code></td>
+<td align="left">summarise values</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><code>group_by()</code></td>
+<td align="left">group operations</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<div id="revise-writing-report-using-rmarkdown" class="section level4">
+<h4>Revise writing report using RMarkdown</h4>
+<p><img src="rmarkdown_cs_1.png" /></p>
+<p><img src="rmarkdown_cs_2.png" /></p>
+<!-- __Q1.__ To showcase your successful project organisation, start your report by -->
+<!-- providing the code and output for listing all files in your current directory  -->
+<!-- and subdirectories. -->
+</div>
+<div id="data-transformation-hands-on" class="section level4">
+<h4>Data transformation hands-on</h4>
+<p>Once you’re environment is set up, you’re ready to get your hands dirty with
+some data manipulation. Following the instructions provided in “R workflow and
+RMarkdown”, you should be able to solve the following assignments:</p>
+<ul>
+<li>Exercise 1: Setup</li>
+<li>Exercise 2: Motor Trend Car Road Tests</li>
+<li>Exercise 3: Airquality</li>
+</ul>
+<p>Begin by writing your code in the corresponding code chuncks in <code>hw1_ex1.Rmd</code>,
+<code>hw1_ex2.Rmd</code> and <code>hw1_ex3.Rmd</code>. When you finish the three exercises, use <code>Knitr</code> to render the
+full report <code>HW1_report.Rmd</code>.
+Don’t forget to save your files and keep them ready and clean for the next session.</p>
+</div>
+<div id="exercise-1-setup" class="section level4">
+<h4>Exercise 1: Setup</h4>
+<p><strong>Project Setup ‘homework1.Rproj’</strong></p>
+<p>Use the files provided in <code>dsfba_homework1.zip</code> to structure your project in the following way (you should create subdirectories by yourselves):</p>
+<p><img src="project_structure.png" /></p>
+<ul>
+<li><strong>1.a</strong> Install the tidyverse and knitr.</li>
+<li><strong>1.b</strong> Load the tidyverse, knitr, and set the precision to 2 digits.</li>
+</ul>
+</div>
+<div id="exercise-2" class="section level4">
+<h4>Exercise 2</h4>
+<p>In this exercise, you will use the airquality dataset from the datasets package. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).</p>
+<p><strong>2.a</strong> Load the dataset mtcars. How many observations and variables does this dataset have?</p>
+<p><strong>2.b</strong> Print out the mtcars data frame sorted by hp (descending oder).</p>
+<p><strong>2.c</strong> Create a new object named <code>cars_cyl</code> and assign to it the <code>mtcars</code> data frame grouped by the number of cylinders, removing all variables except the average miles per US gallon and gross horsepower for each cylinder group.</p>
+<p><strong>2.d</strong> Modify <code>cars_cyl</code> to remove all variables except the average miles/(US) gallon and gross horsepower for each cylinder group.</p>
+<p><strong>2.e</strong> Print out the average miles/(US) gallon and gross horsepower for each cylinder group.
+What can you conclude about the effect of the number of cylinders on the other two variables?</p>
+<p><strong>2.f</strong> Improve the summary statistics by also displaying the median, the minimum, the maximum, the standard deviation and the count.</p>
+<p><strong>2.g</strong> Modify <code>cars_cyl</code> by adding a new variable called <code>perf = hp/mpg</code> and another
+variable <code>rank</code> indicating the rank of the cars in terms of performance (the higher the better).
+Print out the resulting table by decreasing performance.</p>
+<p><strong>2.h</strong> Print out (2 digits of precision) the average performance for each
+number of cylinders. What can you say about the relationship between the two variables?</p>
+<p><strong>2.j</strong> Using the full dataset, plot the relationship between the weight and miles per US gallon, with a different color for each number of cylinder. What can you conclude about the relationships between the three variables? Bonus: add a (linear) regression line for each group.</p>
+<p><strong>2.k</strong> Save <code>cars_cyl</code> as a <code>.csv</code> into the results subdirectory in your project.</p>
+</div>
+<div id="exercise-3" class="section level4">
+<h4>Exercise 3</h4>
+<p>In this exercise, you will use the airquality dataset from the <code>datasets</code> package.
+This dataset contains information about air quality measurements in New York between May 1973 and September 1973. A preview of the dataset:</p>
+<pre class="r"><code>data(airquality)
+head(airquality)</code></pre>
+<pre><code>##   Ozone Solar.R Wind Temp Month Day
+## 1    41     190  7.4   67     5   1
+## 2    36     118  8.0   72     5   2
+## 3    12     149 12.6   74     5   3
+## 4    18     313 11.5   62     5   4
+## 5    NA      NA 14.3   56     5   5
+## 6    28      NA 14.9   66     5   6</code></pre>
+<p><strong>3.a</strong> Transform the temperature from degrees Farhenheit to degrees Celsius.</p>
+<p><strong>3.b</strong> For how many days has the temperature been higher than 30 degrees?</p>
+<p><strong>3.c</strong> How many of those days were in July or August?</p>
+<p><strong>3.d</strong> Display the average monthly temperature.</p>
+<p><strong>3.e</strong> Display ten randomly selected observations from the dataset. What happens if you execute your code a few times? How can you make sure that each execution returns the exact 10 rows?</p>
+<p><strong>3.f</strong> Display the number of days in each month.</p>
+<p><strong>3.g</strong> Display the days where the temperature was lower than 20 degrees with observations
+* where the ozone measurement is missing are removed,
+* and arranged in descending order of the Month and ascending order of Day.</p>
+<p><strong>3.h</strong> Produce monthly boxplots of temperature. More specifically, your figure
+should contain 5 boxplots (i.e., one for each month), with months as the x-axis
+and the temperature as the y-axis. What can you say about the monthly temperature evolution?</p>
+<p><strong>3.i</strong> For the days where such data is available, create a scatter plot of the ozone concentration per month. Add the monthly averages in a different color as well as a line that connects them.
+What can you say about the relationship between Ozone and Month? Is there any similarity to the pevious plot? Describe the link between temperature, ozone and month.</p>
+</div>

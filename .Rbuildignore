@@ -1,0 +1,9 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^cran-comments\.md$
+^.*\.Rprofile$
+^.*\.html$
+^\.travis\.yml$
+^appveyor\.yml$
+^revdep$
+^docs$

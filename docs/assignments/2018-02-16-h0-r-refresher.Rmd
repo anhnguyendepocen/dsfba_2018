@@ -1,0 +1,118 @@
+---
+title: 'H0: R Refresher'
+author: Natasha
+date: '2018-02-16'
+slug: h0-r-refresher
+pre: "<b>3. </b>"
+
+---
+
+
+## R, RStudio, Installation
+* __R__ is a programming language for statistical analysis
+* [__RStudio__](https://www.rstudio.com/products/rstudio/download/) is the integrated development environment (IDE) for R in which we write and execute R code, plot things and write reports.
+* [Installation guidelines and details (Mac, Windows, Linux)](http://web.cs.ucla.edu/~gulzar/rstudio/)
+
+
+### Libraries
+R uses different libraries or packages to load specific functions (read excel files, talk to Twitter, generate plots). You load a package or a library with the command:
+
+```{r}
+# install package from RStudio console
+# ** Note the quotation marks!
+# install.packages("name_of_package")
+
+# load package in enviromnet
+library(blogdown) 
+```
+
+### Assignment
+
+In R, we assign values (numbers, characters, data frames) to objects (vectors, maricies, variables).
+To do so we use the "<-" operator:
+```{r}
+
+# name_of_object = value
+an_object <- 2
+
+# inspect object's value
+an_object
+print(an_object)
+
+another_object <- "some string"
+```
+### Functions
+
+Standard format for defining a function in R:
+```{r}
+my_function_name <- function(arg1 = "default value", arg2 = "default value"){
+  # ... execution code goes here
+  merged_string <- paste(arg1, arg2) # 'paste' is used for concatenating strings
+
+  return(merged_string) # if not specified, last evaluated object is returned
+  }
+
+# call a function elsewhere from code
+arg1 <- "Hello"
+arg2 <- "World!"
+an_object <- my_function_name(arg1, arg2)
+print(an_object)
+
+```
+
+### Data Structures
+
+R’s base data structures can be organised by their dimensionality (1d, 2d, or nd) and whether they’re homogeneous (all contents must be of the same type) or heterogeneous (the contents can be of different types). This gives rise to the five data types most often used in data analysis:
+
+
+| |  Homogeneous | Heterogeneous|
+| :---:  | :---:  | :---: |
+1d  |	Atomic vector |	List
+2d	| Matrix	      |Data frame
+nd	| Array	        |
+
+
+Understand what data structures it’s composed of is to use **str()**. str() is short for structure and it gives a compact, human readable description of any R data structure.
+
+### Vectors
+
+The basic data structure in R is the vector. Vectors come in two flavours: atomic vectors and lists. They have three common properties:
+
+* Type, typeof(), what it is.
+* Length, length(), how many elements it contains.
+* Attributes, attributes(), additional arbitrary metadata.
+They differ in the types of their elements: __all elements__ of an atomic vector must be the __same type__, whereas the elements of a list can have different types.
+
+There are four common types of atomic vectors: logical, integer, double (often called numeric), and character. 
+Atomic vectors are usually created with c(), short for combine:
+```{r}
+dbl_var <- c(1, 2.5, 4.5)
+# With the L suffix, you get an integer rather than a double
+int_var <- c(1L, 6L, 10L)
+# Use TRUE and FALSE (or T and F) to create logical vectors
+log_var <- c(TRUE, FALSE, T, F)
+chr_var <- c("these are", "some strings")
+
+int_var <- c(1L, 6L, 10L)
+typeof(int_var)
+
+
+is.integer(int_var)
+```
+
+
+
+
+### Data frames
+
+### Organizing your code
+
+
+### Reading Data
+
+
+### Starter exercise
+
+
+
+

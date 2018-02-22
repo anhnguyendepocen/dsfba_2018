@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.33" />
+    <meta name="description" content="Website of the course data science for business analytics">
+<meta name="author" content="Thibault Vatter">
+
+    <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+
+    <title>Lectures :: Data Science for Business Analytics</title>
+    
+    
+    <link href="/dsfba_2018/css/nucleus.css?1519258710" rel="stylesheet">
+    <link href="/dsfba_2018/css/font-awesome.min.css?1519258710" rel="stylesheet">
+    <link href="/dsfba_2018/css/hybrid.css?1519258710" rel="stylesheet">
+    <link href="/dsfba_2018/css/featherlight.min.css?1519258710" rel="stylesheet">
+    <link href="/dsfba_2018/css/perfect-scrollbar.min.css?1519258710" rel="stylesheet">
+    <link href="/dsfba_2018/css/auto-complete.css?1519258710" rel="stylesheet">
+    <link href="/dsfba_2018/css/theme.css?1519258710" rel="stylesheet">
+    <link href="/dsfba_2018/css/hugo-theme.css?1519258710" rel="stylesheet">
+    
+      <link href="/dsfba_2018/css/theme-blue.css?1519258710" rel="stylesheet">
+    
+
+    <script src="/dsfba_2018/js/jquery-2.x.min.js?1519258710"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/dsfba_2018/lectures/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+<img src="https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/hec_logo_white.png" alt="hec_logo_white">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/dsfba_2018/js/lunr.min.js?1519258710"></script>
+<script type="text/javascript" src="/dsfba_2018/js/auto-complete.js?1519258710"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/dsfba_2018\/';
+    
+</script>
+<script type="text/javascript" src="/dsfba_2018/js/search.js?1519258710"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/syllabus/" title="Syllabus" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/syllabus/">
+          <b>1. </b>Syllabus
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/lectures/" title="Lectures" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/dsfba_2018/lectures/">
+          <b>2. </b>Lectures
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/assignments/" title="Assignments" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/assignments/">
+          <b>3. </b>Assignments
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/assignments/hw0/" title="HW0: R Refresher" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/assignments/hw0/">
+          HW0: R Refresher
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/assignments/hw1/" title="HW1: Exploratory Data Analysis" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/assignments/hw1/">
+          HW1: Exploratory Data Analysis
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2018/ressources/" title="Ressources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2018/ressources/">
+          <b>4. </b>Ressources
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+       
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fa fa-fw fa-history"></i> Clear History</a></li>         
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://tvatter.github.io/dsfba_2018/lectures/_index.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/dsfba_2018/'>Data Science for Business Analytics</a> > Lectures
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Lectures</h1>
+          
+
+        
+
+
+<p>In the third column, numbers in parenthesis refers to chapters from <a href="http://r4ds.had.co.nz/">R for Data Science</a>.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Topic</th>
+<th align="center">Reading</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">February 26 (morning)</td>
+<td align="left">Introduction</td>
+<td align="center"><a href="https://www.safaribooksonline.com/library/view/doing-data-science/9781449363871/ch01.html">What is Data Science?</a>, <a href="http://r4ds.had.co.nz/introduction.html#prerequisites">Prerequisites (1.4)</a>, <a href="http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf">50 years of data science (statistician&rsquo;s point of view)</a></td>
+</tr>
+
+<tr>
+<td align="left">February 26 (afternoon)</td>
+<td align="left">R workflow and RMarkdown</td>
+<td align="center"><a href="http://r4ds.had.co.nz/transform.html">Data transformations (5)</a>,  <a href="http://r4ds.had.co.nz/workflow-scripts.html">scripts (6)</a>, <a href="http://r4ds.had.co.nz/workflow-projects.html">projects (7)</a>, <a href="https://rmarkdown.rstudio.com/lesson-1.html">introduction to R Markdown</a>, <a href="https://rmarkdown.rstudio.com/lesson-2.html">how does R markdown works</a>, <a href="https://rmarkdown.rstudio.com/lesson-3.html">code chuncks</a>, <a href="https://rmarkdown.rstudio.com/lesson-15.html">R markdown cheat sheet</a></td>
+</tr>
+
+<tr>
+<td align="left">March 12 (morning)</td>
+<td align="left">Wrangling I</td>
+<td align="center"><a href="http://r4ds.had.co.nz/wrangle-intro.html">Wrangle intro (9)</a>,  <a href="http://r4ds.had.co.nz/vectors.html">vectors (20)</a>, <a href="http://r4ds.had.co.nz/tibbles.html">tibbles (10)</a>, <a href="http://r4ds.had.co.nz/data-import.html">data import (11)</a>, <a href="http://r4ds.had.co.nz/tidy-data.html">tidy data (12)</a></td>
+</tr>
+
+<tr>
+<td align="left">March 12 (afternoon)</td>
+<td align="left">Visualization I</td>
+<td align="center"><a href="http://r4ds.had.co.nz/data-visualisation.html">Data visualization (3)</a></td>
+</tr>
+
+<tr>
+<td align="left">March 26 (morning)</td>
+<td align="left">Wrangling II</td>
+<td align="center"><a href="http://r4ds.had.co.nz/relational-data.html">Relational data (13)</a>, <a href="http://r4ds.had.co.nz/strings.html">strings (14)</a>,  <a href="http://r4ds.had.co.nz/factors.html">factors (15)</a>, <a href="http://r4ds.had.co.nz/dates-and-times.html">dates and times (16)</a></td>
+</tr>
+
+<tr>
+<td align="left">March 26 (afternoon)</td>
+<td align="left">Visualization II</td>
+<td align="center"><a href="http://r4ds.had.co.nz/graphics-for-communication.html">Graphics for communication (28)</a></td>
+</tr>
+
+<tr>
+<td align="left">April 9 (morning)</td>
+<td align="left">Modeling I</td>
+<td align="center"><a href="http://r4ds.had.co.nz/model-intro.html">Model intro (22)</a>, <a href="http://r4ds.had.co.nz/model-basics.html">model basics (23)</a></td>
+</tr>
+
+<tr>
+<td align="left">April 9 (afternoon)</td>
+<td align="left">Modeling II</td>
+<td align="center"><a href="http://r4ds.had.co.nz/model-building.html">Model building (24)</a>, <a href="http://r4ds.had.co.nz/many-models.html">many models (25)</a></td>
+</tr>
+
+<tr>
+<td align="left">April 30 (morning)</td>
+<td align="left">Shiny</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="left">April 30 (afternoon)</td>
+<td align="left">Guest presentation</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="left">May 14 (morning)</td>
+<td align="left">Big data</td>
+<td align="center"><a href="https://www.evry.com/globalassets/insight/bank2020/bank-2020---big-data---whitepaper.pdf">Big data in banking</a></td>
+</tr>
+
+<tr>
+<td align="left">May 14 (afternoon)</td>
+<td align="left">Hadoop and spark</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="left">May 28 (morning)</td>
+<td align="left">Projects presentations</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="left">May 28 (afternoon)</td>
+<td align="left">Projects presentations</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/dsfba_2018/syllabus/" title="Syllabus"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/dsfba_2018/assignments/" title="Assignments" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/dsfba_2018/js/clipboard.min.js?1519258710"></script>
+    <script src="/dsfba_2018/js/perfect-scrollbar.min.js?1519258710"></script>
+    <script src="/dsfba_2018/js/perfect-scrollbar.jquery.min.js?1519258710"></script>
+    <script src="/dsfba_2018/js/jquery.sticky.js?1519258710"></script>
+    <script src="/dsfba_2018/js/featherlight.min.js?1519258710"></script>
+    <script src="/dsfba_2018/js/html5shiv-printshiv.min.js?1519258710"></script>
+    <script src="/dsfba_2018/js/highlight.pack.js?1519258710"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/dsfba_2018/js/modernizr.custom.71422.js?1519258710"></script>
+    <script src="/dsfba_2018/js/learn.js?1519258710"></script>
+    <script src="/dsfba_2018/js/hugo-learn.js?1519258710"></script>
+
+    <link href="/dsfba_2018/mermaid/mermaid.css?1519258710" type="text/css" rel="stylesheet" />
+    <script src="/dsfba_2018/mermaid/mermaid.js?1519258710"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-114246735-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  </body>
+</html>
