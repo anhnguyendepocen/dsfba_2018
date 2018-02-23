@@ -67,27 +67,28 @@ Use the files provided in `dsfba_homework1.zip` to structure your project in the
 
 ![](project_structure.png)
 
-* __1.a__ Install the tidyverse and knitr.
-* __1.b__ Load the tidyverse, knitr, and set the precision to 2 digits.
+__1.a__ Install the tidyverse and knitr.
 
-#### Exercise 2
+__1.b__ Load the tidyverse, knitr, and set the precision to 2 digits.
 
-In this exercise, you will use the airquality dataset from the datasets package. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+#### Exercise 2: Motor Trend Car Road Tests
 
-__2.a__  Load the dataset mtcars. How many observations and variables does this dataset have?
+In this exercise, you will use the `mtcars` dataset from the `datasets` package. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
 
-__2.b__  Print out the mtcars data frame sorted by hp (descending order).
+__2.a__ Load the dataset mtcars. How many observations and variables does this dataset have?
 
-__2.c__ Create a new object named `cars_cyl` and assign to it the `mtcars` data frame grouped by the number of cylinders, removing all variables except the average miles per US gallon and gross horsepower for each cylinder group.
+__2.b__ Print out the mtcars data frame sorted by hp (descending order).
+
+__2.c__ Create a new object named `cars_cyl` and assign to it the `mtcars` data frame grouped by the number of cylinders.
 
 __2.d__ Modify `cars_cyl` to remove all variables except the average miles/(US) gallon and gross horsepower for each cylinder group.
 
-__2.e__  Print out the average miles/(US) gallon and gross horsepower for each cylinder group.
+__2.e__ Print out the average miles/(US) gallon and gross horsepower for each cylinder group.
 What can you conclude about the effect of the number of cylinders on the other two variables?
 
-__2.f__  Improve the summary statistics by also displaying the median, the minimum, the maximum, the standard deviation and the count.
+__2.f__ Improve the summary statistics by also displaying the median, the minimum, the maximum, the standard deviation and the count.
 
-__2.g__  Modify `cars_cyl` by adding a new variable called `perf = hp/mpg` and another
+__2.g__ Modify `cars_cyl` by adding a new variable called `perf = hp/mpg` and another
 variable `rank` indicating the rank of the cars in terms of performance (the higher the better). 
 Print out the resulting table by decreasing performance.
 
@@ -99,9 +100,9 @@ __2.j__ Using the full dataset, plot the relationship between the weight and mil
 __2.k__ Save `cars_cyl` as a `.csv` into the results subdirectory in your project.
 
 
-#### Exercise 3
+#### Exercise 3: New York Air Quality Measurements
 
-In this exercise, you will use the airquality dataset from the `datasets` package. 
+In this exercise, you will use the `airquality` dataset from the `datasets` package. 
 This dataset contains information about air quality measurements in New York between May 1973 and September 1973. A preview of the dataset:
 
 ```{r, message = FALSE}
