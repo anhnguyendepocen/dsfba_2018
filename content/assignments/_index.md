@@ -20,10 +20,10 @@ registration is **March 18**.
 
 | Lab Date |  Topic | HW#  |
 | :---  | :---  | :---  |
-| February 26 (morning) |  [ R Refresher](/assignments/hw0/) | / |
-| February 26 (afternoon) | [R workflow, RMarkdown, data wrangling and visualization (I)](/assignments/hw1/)  | HW1 |
+| February 26 (morning) |  [ R Refresher](/dsfba_2018/assignments/hw0/) | / |
+| February 26 (afternoon) | [R workflow, RMarkdown, data wrangling and visualization (I)](/dsfba_2018/assignments/hw1/)  | HW1 |
 | March 12 (morning) | Project | /|
-| March 12 (afternoon) | [R workflow, RMarkdown, data wrangling and visualization (I)](/assignments/hw1/) | HW1 |
+| March 12 (afternoon) | [R workflow, RMarkdown, data wrangling and visualization (I)](/dsfba_2018/assignments/hw1/) | HW1 |
 | March 26 (morning) | Project | /|
 | March 26 (afternoon) | data wrangling and visualization (II), modeling (I and II) | HW2|
 | April 9 (morning) | Project | /|
