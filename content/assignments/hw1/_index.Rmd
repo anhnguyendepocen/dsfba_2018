@@ -61,6 +61,10 @@ Don't forget to save your files and keep them ready and clean for the next sessi
 
 #### Exercise 1: Setup
 
+__* Connecting to remote repository__
+
+To submit your homework you should connect to your assigned repository. If you need some help, follow the instructions on [this link](https://www.r-bloggers.com/rstudio-and-github/), Section: *Clone an existing GitHub project to new RStudio project*.
+
 __Project Setup 'homework1.Rproj'__
 
 Use the files provided in `dsfba_homework1.zip` to structure your project in the following way (you should create subdirectories by yourselves):
