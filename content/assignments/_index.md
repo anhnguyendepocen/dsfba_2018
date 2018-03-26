@@ -25,9 +25,9 @@ registration is **March 18**.
 | March 12 (morning) | Project | Project |
 | March 12 (afternoon) | [R workflow, RMarkdown, data wrangling and visualization (I)](/dsfba_2018/assignments/hw1/) | HW1 |
 | March 26 (morning) | Project | Project |
-| March 26 (afternoon) | data wrangling and visualization (II), modeling (I and II) | HW2|
+| March 26 (afternoon) | [Data wrangling and visualization (II), modeling (I and II)](/dsfba_2018/assignments/hw2/) | HW2 |
 | April 9 (morning) | Project | Project |
-| April 9 (afternoon) | data wrangling and visualization (II), modeling (I and II) | HW2 |
+| April 9 (afternoon) | [Data wrangling and visualization (II), modeling (I and II)](/dsfba_2018/assignments/hw2/) | HW2 |
 | April 30 (morning) | Project | Project |
 | April 30 (afternoon) |Shiny app |  HW3 |
 | May 14 (morning) | Project | Project |
