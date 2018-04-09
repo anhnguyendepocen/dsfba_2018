@@ -14,7 +14,7 @@ In the third column, numbers in parenthesis refers to chapters from [R for Data 
 | March 12 (afternoon) | [Visualization I](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture4_visualize_1.pdf) | [Data visualization (3)](http://r4ds.had.co.nz/data-visualisation.html) |
 | March 26 (morning) | [Wrangling II](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture5_wrangle_2.pdf) | [Relational data (13)](http://r4ds.had.co.nz/relational-data.html), [strings (14)](http://r4ds.had.co.nz/strings.html),  [factors (15)](http://r4ds.had.co.nz/factors.html), [dates and times (16)](http://r4ds.had.co.nz/dates-and-times.html) |
 | March 26 (afternoon) |  [Visualization II I](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture6_visualize_2.pdf)  | [Graphics for communication (28)](http://r4ds.had.co.nz/graphics-for-communication.html) |
-| April 9 (morning) | Modeling I | [Model intro (22)](http://r4ds.had.co.nz/model-intro.html), [model basics (23)](http://r4ds.had.co.nz/model-basics.html) |
+| April 9 (morning) | [Modeling I](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture7_modeling_1.pdf) | [Model intro (22)](http://r4ds.had.co.nz/model-intro.html), [model basics (23)](http://r4ds.had.co.nz/model-basics.html) |
 | April 9 (afternoon) | Modeling II | [Model building (24)](http://r4ds.had.co.nz/model-building.html), [many models (25)](http://r4ds.had.co.nz/many-models.html) |
 | April 30 (morning) | Shiny | |
 | April 30 (afternoon) | Guest presentation | |
