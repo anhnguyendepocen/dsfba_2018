@@ -139,3 +139,18 @@ and the temperature as the y-axis. What can you say about the monthly temperatur
 __3.i__ For the days where such data is available, create a scatter plot of the ozone concentration per month. Add the monthly averages in a different color as well as a line that connects them. 
 What can you say about the relationship between Ozone and Month? Is there any similarity to the pevious plot? Describe the link between temperature, ozone and month.
 
+### Grades for HW1
+
+Grading per exercise and overal results are available in the [following file](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/hw1_results.xlsx).
+Please note that the first row: `Max possible` states the maximum points per question or requirement.
+
+The [solutions for HW1 are available here](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/hw1_report.html).
+
+Notes on the grading:
+
+* 1 point "per command" (e.g., there are 3 in both 2a and 2b), dplyr verbs/helper functions such as desc/assignments counts as "1 command".
+* 2 points per interpretation.
+* 1 point "per aesthetics" (counting x and y as a single aesthetic, but color/pch and others separately) + 1 point "per geom" + 1 point for labels/titles in general.
+* 1 points per call to kable (should be "polished" to get full points for the `kable` column).
+
+If you have questions regarding the grades, please first have a look at the solutions and send an email with the remarks. 
