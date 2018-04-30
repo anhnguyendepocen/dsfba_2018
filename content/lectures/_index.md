@@ -16,7 +16,7 @@ In the third column, numbers in parenthesis refers to chapters from [R for Data 
 | March 26 (afternoon) |  [Visualization II I](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture6_visualize_2.pdf)  | [Graphics for communication (28)](http://r4ds.had.co.nz/graphics-for-communication.html) |
 | April 9 (morning) | [Modeling I](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture7_modeling_1.pdf) | [Model intro (22)](http://r4ds.had.co.nz/model-intro.html), [model basics (23)](http://r4ds.had.co.nz/model-basics.html) |
 | April 9 (afternoon) | [Modeling II](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture8_modeling_2.pdf) | [Model building (24)](http://r4ds.had.co.nz/model-building.html), [many models (25)](http://r4ds.had.co.nz/many-models.html) |
-| April 30 (morning) | [Presentations, dashboards, interactivity I](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture9_presentations_dashboard.pdf) | |
+| April 30 (morning) | [Presentations, dashboards, interactivity I](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture9_presentations_dashboard.pdf) | [Code examples](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/examples.zip) |
 | April 30 (afternoon) | Guest presentation | |
 | May 14 (morning) | Big data | [Big data in banking](https://www.evry.com/globalassets/insight/bank2020/bank-2020---big-data---whitepaper.pdf) |
 | May 14 (afternoon) | Hadoop and spark | |
