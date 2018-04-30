@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
 
-    <title>Syllabus :: Data Science for Business Analytics</title>
+    <title>HW3: Many models :: Data Science for Business Analytics</title>
     
     
     <link href="/dsfba_2018/css/nucleus.css?1525069014" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/dsfba_2018/syllabus/">
+  <body class="" data-url="/dsfba_2018/assignments/hw3/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -80,8 +80,8 @@
   
     
     <li data-nav-id="/dsfba_2018/syllabus/" title="Syllabus" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/dsfba_2018/syllabus/">
@@ -128,7 +128,7 @@
   
     
     <li data-nav-id="/dsfba_2018/assignments/" title="Assignments" class="dd-item 
-        
+        parent
         
         
         ">
@@ -261,8 +261,8 @@
   
     
     <li data-nav-id="/dsfba_2018/assignments/hw3/" title="HW3: Many models" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/dsfba_2018/assignments/hw3/">
@@ -357,7 +357,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://tvatter.github.io/dsfba_2018/syllabus/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://tvatter.github.io/dsfba_2018/assignments/hw3/_index.html" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -382,7 +382,13 @@
             
           
           
-            <a href='/dsfba_2018/'>Data Science for Business Analytics</a> > Syllabus
+            
+            
+          
+          
+            <a href='/dsfba_2018/'>Data Science for Business Analytics</a> > <a href='/dsfba_2018/assignments/'>Assignments</a> > HW3: Many models
+          
+         
           
          
           
@@ -392,27 +398,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#people">People</a>
-<ul>
-<li>
-<ul>
-<li><a href="#instructor">Instructor</a></li>
-<li><a href="#teaching-assistant">Teaching assistant</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#learning-outcomes">Learning Outcomes</a></li>
-<li><a href="#course-readings">Course Readings</a></li>
-<li><a href="#evaluation">Evaluation</a>
-<ul>
-<li><a href="#retake-exam">Retake exam</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -424,71 +410,37 @@
         
         <div id="body-inner">
           
-            <h1>Syllabus</h1>
+            <h1>HW3: Many models</h1>
           
 
         
 
 
-
-
-<h2 id="people">People</h2>
-
-<h4 id="instructor">Instructor</h4>
-
+<p><a href="https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/dsfba_homework3_skeleton.zip">Download the HW3 skeleton files</a>. To successfully complete the first assignment you
+will have to do the following:</p>
+<ol style="list-style-type: decimal">
+<li>Create a new project with the name <code>homework3.Rproj</code>.</li>
+<li>Organize the files in the right folders to provide ease of building a final report.</li>
+<li>Following the instructions below, complete missing code in chunks in <code>hw3_report.Rmd</code>.</li>
+</ol>
+<p>To obtain the maximum number of points, use whenever possible:</p>
 <ul>
-<li>Name: <a href="https://tvatter.github.io">Thibault Vatter</a></li>
-<li>Email: <a href="mailto:thibault.vatter@unil.ch">thibault.vatter@unil.ch</a></li>
-<li>Office hours: I am based in New York, so I will not hold office hours, but
-you can write me to set-up a meeting via Skype.</li>
+<li>the pipeline symbol %&gt;%,</li>
+<li><code>dplyr</code> verbs,</li>
+<li><code>kable</code> to print tables,</li>
+<li><code>ggplot</code> to produce the figures,</li>
+<li><code>purr</code>’s functions to minimize code duplication,</li>
+<li><code>broom</code>’s functions to format the results model fits.</li>
 </ul>
-
-<h4 id="teaching-assistant">Teaching assistant</h4>
-
+<p>Also:</p>
 <ul>
-<li>Name: <a href="http://hec.unil.ch/hec/recherche/fiche?pnom=ntagasovska&amp;dyn_lang=en">Natasha Tagasovska</a></li>
-<li>Email: <a href="mailto:natasha.tagasovska@unil.ch">natasha.tagasovska@unil.ch</a></li>
-<li>Office hours: to be determined.</li>
+<li>Pay attention to the general aesthetics of your report (i.e., formatting of
+the tables, sizing of the figures, etc.).</li>
+<li>Use inline code to display single numbers, and <code>echo = FALSE</code> for code chunks when you display
+a table of produce a figure (i.e., we don’t want to see code unless it is necessary).</li>
+<li>Minimize the amount of code duplication by using iterations concepts and list-columns.</li>
+<li>Comment your code to explain what you are doing.</li>
 </ul>
-
-<h2 id="learning-outcomes">Learning Outcomes</h2>
-
-<p>Upon completion of that course the students will be able to</p>
-
-<ul>
-<li>manage and analyze data,</li>
-<li>develop data products,</li>
-<li>and use data science in a business context.</li>
-</ul>
-
-<p><img src="http://r4ds.had.co.nz/diagrams/data-science.png" alt="" />
-<center><em>From <a href="http://r4ds.had.co.nz">http://r4ds.had.co.nz</a></em></center></p>
-
-<h2 id="course-readings">Course Readings</h2>
-
-<p>There will be no mandatory reading. However, weekly readings related to the
-<a href="/lectures/">lectures</a> are strongly recommended,
-and <a href="/ressources/">additional ressources</a>
-will undoubtedly be useful.</p>
-
-<h2 id="evaluation">Evaluation</h2>
-
-<p>Evaluation will be based on four assignments (50%) and a final project (50%).
-For each assignment as well as the project,
-students will have to provide detailed written reports.
-Additionally, for the project, students will give a presentation during
-the last lecture.</p>
-
-<p>The final grade will be calculated using the following formula:
-$$GRADE = \frac{\sum_{i=1}^{4} HW_i \cdot 12.5 + PR \cdot 50}{100},$$
-where $HW_1$, $HW_2$, $HW_3$, $HW_4$, and $PR$ are respectively
-the grades for the assignments and final project, on a scale from 0 to 100.
-This final grade will then be adjusted on a scale from 1 to 6.</p>
-
-<h3 id="retake-exam">Retake exam</h3>
-
-<p>The retake consists in asking the failing students to make modifications
-or additions to their written reports and to present them.</p>
 
 
 <footer class=" footline" >
@@ -545,23 +497,6 @@ or additions to their written reports and to present them.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -586,21 +521,6 @@ or additions to their written reports and to present them.</p>
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -611,6 +531,25 @@ or additions to their written reports and to present them.</p>
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -671,6 +610,23 @@ or additions to their written reports and to present them.</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -679,6 +635,9 @@ or additions to their written reports and to present them.</p>
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -697,10 +656,10 @@ or additions to their written reports and to present them.</p>
 
 
         
-            <a class="nav nav-prev" href="/dsfba_2018/" title="Data Science for Business Analytics"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/dsfba_2018/assignments/hw2/" title="HW2: Wrangling, Visualization and Modeling"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/dsfba_2018/lectures/" title="Lectures" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/dsfba_2018/ressources/" title="Resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

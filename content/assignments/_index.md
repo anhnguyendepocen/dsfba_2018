@@ -28,8 +28,8 @@ registration is **March 18**.
 | March 26 (afternoon) | [Data wrangling and visualization (II), modeling (I and II)](/dsfba_2018/assignments/hw2/) | HW2 |
 | April 9 (morning) | Project | Project |
 | April 9 (afternoon) | [Data wrangling and visualization (II), modeling (I and II)](/dsfba_2018/assignments/hw2/) | HW2 |
-| April 30 (morning) | Project | Project |
-| April 30 (afternoon) |Shiny app |  HW3 |
+| April 30 (morning) | [Many models](/dsfba_2018/assignments/hw3/) | Project |
+| April 30 (afternoon) | Shiny app |  HW3 |
 | May 14 (morning) | Project | Project |
 | May 14 (afternoon) | Spark | HW4 | 
 
