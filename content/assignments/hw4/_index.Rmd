@@ -13,7 +13,7 @@ you did for HW3 with some slides.
     * the slides (PDF or HTML formats, no Powerpoint/Keynote files), 
     * the Rmarkdown file that you used to generate the slides 
     (if you choose to use the concepts presented April 30th), 
-    * and a REAMDE (txt format) with the link to the video.
+    * and a README file (txt format) with the link to the video.
 
 Please make sure that:
 
