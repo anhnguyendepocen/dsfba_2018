@@ -77,6 +77,13 @@
 	"content": "Download the HW3 skeleton files. To successfully complete the first assignment you will have to do the following:\nCreate a new project with the name homework3.Rproj. Organize the files in the right folders to provide ease of building a final report. Following the instructions below, complete missing code in chunks in hw3_report.Rmd.  To obtain the maximum number of points, use whenever possible:\n the pipeline symbol %\u0026gt;%, dplyr verbs, kable to print tables, ggplot to produce the figures, purr’s functions to minimize code duplication, broom’s functions to format the results model fits.  Also:\n Pay attention to the general aesthetics of your report (i.e., formatting of the tables, sizing of the figures, etc.). Use inline code to display single numbers, and echo = FALSE for code chunks when you display a table of produce a figure (i.e., we don’t want to see code unless it is necessary). Minimize the amount of code duplication by using iterations concepts and list-columns. Comment your code to explain what you are doing.  "
 },
 {
+	"uri": "/dsfba_2018/assignments/hw4/",
+	"title": "HW4: Screencast",
+	"tags": [],
+	"description": "",
+	"content": " Create a two minute screencast with narration showing what you did for HW3 with some slides. Upload the video to an online video-platform such as YouTube or Vimeo. Use your groupXYZ_2018_hw4’s Github repository to upload  the slides (PDF or HTML formats, no Powerpoint/Keynote files), the Rmarkdown file that you used to generate the slides (if you choose to use the concepts presented April 30th), and a REAMDE (txt format) with the link to the video.   Please make sure that:\n The sound quality of your video is good. You are not running longer than 2 minutes (we will strictly enforce the time limit). You use principles of good storytelling and presentations to get your key points across. You focus the majority of your screencast on your main contributions rather than on technical details:  Make sure the main contributions are upfront and center rather than at the end. What insights did you gain? What is the single most important thing you would like your audience to take away?   Information about how to prepare these screencasts can be found here.\n"
+},
+{
 	"uri": "/dsfba_2018/tags/",
 	"title": "Tags",
 	"tags": [],
