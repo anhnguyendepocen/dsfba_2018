@@ -18,7 +18,7 @@ In the third column, numbers in parenthesis refers to chapters from [R for Data 
 | April 9 (afternoon) | [Modeling II](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture8_modeling_2.pdf) | [Model building (24)](http://r4ds.had.co.nz/model-building.html), [many models (25)](http://r4ds.had.co.nz/many-models.html) |
 | April 30 (morning) | [Presentations, dashboards, interactivity I](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/lecture9_presentations_dashboard.pdf) | [Code examples](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/examples.zip) |
 | April 30 (afternoon) | Guest presentations | Slides of [Nataliya](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/dsfba_swissquote_presentation.pdf) and [Julien](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/dsfba_sdsc_presentation.pptx) |
-| May 14 (morning) | Big data | [Big data in banking](https://www.evry.com/globalassets/insight/bank2020/bank-2020---big-data---whitepaper.pdf) |
-| May 14 (afternoon) | Hadoop and spark | |
+| May 14 (morning) | Projects coaching | |
+| May 14 (afternoon) | Projects coaching | |
 | May 28 (morning) | Projects presentations | |
 | May 28 (afternoon) | Projects presentations | |
