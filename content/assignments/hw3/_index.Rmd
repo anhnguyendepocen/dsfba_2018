@@ -34,6 +34,6 @@ a table of produce a figure (i.e., we don't want to see code unless it is necess
 ## Solutions for HW3
 
 The [solutions for HW3 are available here](https://raw.githubusercontent.com/tvatter/dsfba_2018/master/data/dsfba_homework3_solution.zip).
-Please not that this is only a minimum draft version and should not to be taken as an example of "perfect submission". 
+Please note that this is only a minimum draft version and should not to be taken as an example of "perfect submission". 
 Other working solutions will be graded accordingly. 
 
